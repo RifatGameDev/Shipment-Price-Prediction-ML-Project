@@ -33,7 +33,7 @@ list_of_files = [
     "setup.py",
     "config/model.yaml",
     "config/schema.yaml",
-    # 'test/test.py'
+    'test/test.py'
 
 
 ]
