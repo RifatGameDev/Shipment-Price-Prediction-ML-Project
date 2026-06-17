@@ -12,6 +12,7 @@ pymongo
 pymongo[srv]
 xgboost
 dill
+numpy
 evidently==0.2.8
 catboost
 -e .

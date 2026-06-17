@@ -15,4 +15,4 @@ Step 2. Create a conda environment.
 
 Step 3. Install the requirements
 
-        pip install -r requirements.txt
+pip install -r requirements.txt
