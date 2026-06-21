@@ -15,4 +15,5 @@ dill
 numpy
 evidently==0.2.8
 catboost
+python-dotenv
 -e .

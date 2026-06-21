@@ -16,3 +16,14 @@ Step 2. Create a conda environment.
 Step 3. Install the requirements
 
 pip install -r requirements.txt
+
+
+
+# Workflow
+
+1. Constants
+2. config_entity
+3. artifacts_entity
+4. Components
+5. pipeline
+6. main.py

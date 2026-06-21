@@ -1,9 +1,4 @@
-from shipment.logger import logging
-from shipment.exception import shippingException
-import sys
-from shipment.utils.main_utils import MainUtils
+from shipment.pipline.training_pipeline import TrainPipeline
 
-obj = MainUtils()
-
-data = obj.read_yaml_file("config/model.yaml")
-print(data)
+obj = TrainPipeline()
+obj.run_pipeline()
