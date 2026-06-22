@@ -1,7 +1,7 @@
 # import shutil
 import sys
 # from typing import Dict, Tuple, List
-# import dill
+import dill
 # import xgboost
 import numpy as np
 # import pandas as pd
@@ -131,19 +131,19 @@ class MainUtils:
     #     except Exception as e:
     #         raise shippingException(e, sys) from e
 
-    # @staticmethod
-    # def save_object(file_path: str, obj: object) -> None:
-    #     logging.info("Entered the save_object method of MainUtils class")
-    #     try:
-    #         with open(file_path, "wb") as file_obj:
-    #             dill.dump(obj, file_obj)
+    @staticmethod
+    def save_object(file_path: str, obj: object) -> None:
+        logging.info("Entered the save_object method of MainUtils class")
+        try:
+            with open(file_path, "wb") as file_obj:
+                dill.dump(obj, file_obj)
 
-    #         logging.info("Exited the save_object method of MainUtils class")
+            logging.info("Exited the save_object method of MainUtils class")
 
-    #         return file_path
+            return file_path
 
-    #     except Exception as e:
-    #         raise shippingException(e, sys) from e
+        except Exception as e:
+            raise shippingException(e, sys) from e
 
     # @staticmethod
     # def get_best_model_with_name_and_score(model_list: list) -> Tuple[object, float]:
